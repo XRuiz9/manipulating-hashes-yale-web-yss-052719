@@ -15,7 +15,7 @@ def first_challenge
 
   contacts["Freddy Mercury"].collect do |attribute, value|
     if (attribute == "favorite_icecream_flavors")
-      contacts["Freddy Mercury"][:favorite_icecream_flavors].delete_if{|flavor| flavor == "strawberry"}
+      value.delete_if{|flavor| flavor == "strawberry"}
     end
   end
 
