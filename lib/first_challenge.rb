@@ -17,7 +17,7 @@ def first_challenge
     data.collect do |attribute, value|
       if attribute == :favorite_icecream_flavors
         if value.include?("strawberry")
-          value.delete!("strawberry")
+          value.delete("strawberry")
         end
       end
     end
